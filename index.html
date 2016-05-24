@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Building Interactive CLI, Telus JavaScript Guild</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+    </style>
+    <link rel="stylesheet" href="./src/style.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: center, middle
+
+      # .big-one[.pink[BUILDING INTERACTIVE CLIs in NODE with YARGS]]
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: center, middle
+
+      # .big-one[![sassyLady](./src/images/sassyLady.png) .pink[I am [@_lrlna](https://twitter.com/lrlna)]]
+
+      ---
+      class: center, middle
+      # .pink[So what's a command line module?]
+
+      ---
+      class: middle
+      # 1. mkdir
+      --
+
+      # 2. git
+      --
+
+      # 3. ps aux
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: middle
+
+      # .pink[A tool [that] is a simple program, usually designed for a specific purpose, it is sometimes referred to as a command.]
+      ##### .pink[http://www.tldp.org/LDP/GNU-Linux-Tools-Summary/html/c1089.htm]
+
+      ---
+      class: middle
+
+      # .pink[filter pattern]
+      # input --> ![sparkles](./src/images/sparkles.png) _doStuff(input)_ ![sparkles](./src/images/sparkles.png) --> output
+
+      ### .pink[i.e. grep]
+      ##### .pink[http://www.catb.org/esr/writings/taoup/html/ch11s06.html]
+
+      ???
+      non interactive; controlled by command line options
+
+      ---
+      class: middle
+
+      # .pink[cantrip pattern]
+      # ![sparkles](./src/images/sparkles.png) _doStuff(initialConditions)_ ![sparkles](./src/images/sparkles.png)
+
+      ### .pink[i.e. clear]
+      ##### .pink[http://www.catb.org/esr/writings/taoup/html/ch11s06.html]
+
+      ???
+      no input, no output, perform task based on initial conditions
+
+      ---
+      class: middle
+
+      # .pink[source pattern]
+      # ![sparkles](./src/images/sparkles.png) _doStuff(initialConditions)_ ![sparkles](./src/images/sparkles.png) --> output
+
+      ### .pink[i.e. ls]
+      ##### .pink[http://www.catb.org/esr/writings/taoup/html/ch11s06.html]
+
+      ???
+      no input, output controlled by initial conditions; filter like
+
+      ---
+      class: middle
+
+      # .pink[_ed_ pattern]
+      # input --> ![sparkles](./src/images/sparkles.png) _doStuff(input)_ ![sparkles](./src/images/sparkles.png) --> output --> input --> ![sparkles](./src/images/sparkles.png) _doStuff(input)_ ![sparkles](./src/images/sparkles.png) --> output --> input --> ![sparkles](./src/images/sparkles.png) _doStuff(input)_ ![sparkles](./src/images/sparkles.png) --> output
+
+      ### .pink[i.e. line editor]
+      ##### .pink[http://www.catb.org/esr/writings/taoup/html/ch11s06.html]
+
+      ???
+      continues to take input from user and generate output: most interactive
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: center, middle
+      # .big-one[.pink[process.argv [2]]]
+
+      ---
+      class: middle
+      ## .pink[womabt -y hello javascripters]
+      ```bash
+        [ '/Users/lrlna/.nvm/versions/node/v6.0.0/bin/node',
+        '/Users/lrlna/.nvm/versions/node/v6.0.0/bin/wombat',
+        '-y',
+        'hello',
+        'javascripters' ]
+      ```
+
+      ---
+      class: middle
+      ## .pink[womabt -y hello javascripters]
+      ```bash
+        { _: [ 'hello', 'javascripters' ],
+        b: false,
+        y: true,
+        g: false,
+        r: false,
+        '$0': 'wombat',
+        '[object Object]': undefined }
+      ```
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: center, middle
+
+      # .big-one[.pink[wombat.js]]
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: center, middle
+
+      # .big-one[.pink[twitter-name]]
+
+      ---
+      background-image: url(./src/images/space.jpg)
+      background-size: cover
+
+      class: center, middle
+
+      # .big-one[.pink[cli-texting]]
+
+    </textarea>
+    <script src="./src/remark.js"></script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

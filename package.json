@@ -1,0 +1,20 @@
+{
+  "name": "telus-cli-presentation",
+  "version": "1.0.0",
+  "description": "Irina's presentation on cli + yargs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "yargs",
+    "telus-presentation",
+    "javascript-guild"
+  ],
+  "author": "Irina Shestak",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.0.0"
+  }
+}
